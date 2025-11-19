@@ -1,0 +1,234 @@
+:root{
+	--text_color: black;
+	--background_color: #eee;
+	--link_color: rgb(79, 166, 224);
+	--link_hover: rgb(46, 92, 122);
+	--nav_background: rgb(208, 241, 230);
+	--hero_background: rgba(231, 225, 219, 0.651);
+}
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /*padding and border are included in the box width and height*/
+	/*https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing border-box, content-box*/
+}
+main{
+	margin: 0px 10px;
+}
+body{
+	font-family: "Poppins", Arial, Helvetica, sans-serif;
+	color: var(--text_color);
+	background-color: var(--background_color);
+	max-width: 1200px;
+	/* margin: 20px auto; */
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	/* margin-bottom: auto; */
+	border: 1px solid;
+}
+/* p{
+	font-family: Calibri, sans-serif;
+} */
+a{
+	text-decoration: none;	
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 20px;
+	height: 80px;
+	align-items: center;
+	background-color: var(--nav_background);
+}
+nav .left a{
+	color: var(--text_color);
+	font-size: 1.2em;
+	font-weight: 600;
+}
+nav .right a{
+	color: var(--link_color);
+	margin-left: 20px;
+}
+nav .right a:hover{
+	color: var(--link_hover);	
+}
+nav .left a:hover{
+	color: var(--link_hover);	
+}
+nav .right a span{	
+	margin-left: 8px;
+}
+/*hero section*/
+.hero-section{
+	/* border-radius: 10%; */
+	background-color: var(--hero_background);
+	display: flex;
+	/*justify-content: space-between; -- not needed as flex used in children */  /*horizontally*/
+	align-items: center; /*vertically*/
+	padding: 10px 10px;
+	margin: 40px 40px;
+	gap: 40px;	 
+}
+.hero-section .text{
+	flex: 3;
+	margin-left: 30px;
+}
+.hero-section .text h2{
+	font-size: 2.5em;
+}
+.hero-section .text .links{
+	margin-top: 20px;
+	display: flex;
+	justify-content: center;
+	/* align-items: start; */
+	/* align-items: center; */
+	text-align: center;
+}
+.hero-section .text .links a{
+	color: var(--link_color);
+	margin-right: 10px;	
+	padding: 3px;
+	border: 1px solid var(--link_color);
+	border-radius: 10px;
+}
+.hero-section .text .links a:hover{
+	color: var(--link_hover);
+	border-color: var(--link_hover);
+}
+.hero-section .headshot{
+	flex: 1;
+	margin-right: 30px;
+}
+
+.hero-section .headshot img{
+	width: 300px;
+	height: 300px;
+	border-radius: 50%;
+}
+
+/*skills section*/
+.skills-section{
+	padding: 10px 10px;
+	margin: 40px 40px;
+	background-color: rgba(227, 221, 236, 0.692);
+}
+.skills-section h2{
+	font-size: 2em;
+	text-align: center;
+}
+.skills-section .text{
+	text-align: center;
+}
+.skills-section .cells{
+	margin-top: 20px;
+	display: flex;
+	flex-wrap: wrap; /*go in new line if less space*/
+	justify-content: center;	/*space-evenly*/
+	gap: 20px;
+}
+.skills-section .cells .cell{
+	display: flex;
+	justify-content: center;
+	/* align-items: start; */
+	align-items: center;
+	text-align: center;
+	gap:10px;
+	padding: 5px;
+	border: 1px solid rgb(209, 209, 209);
+	border-radius: 5px;
+}
+.skills-section .cells .cell img{
+	height: 25px;
+	width: 25px;
+	object-fit: contain;
+	/* border-radius: 5px; */
+}
+.skills-section .cells .cell span{
+	font-size: 1em;
+	font-weight: bold;
+	font-family: Courier;
+}
+/* ------------------------------------------------------- */
+/*projects section*/
+.projects-section{
+	padding: 10px 10px;
+	margin: 40px 40px;
+	background-color: rgba(150, 187, 151, 0.226);
+}
+.projects-section h2{
+	font-size: 2em;
+}
+.projects-section #flutter{	
+	position: relative;
+	left: 30px;
+}
+/* ------------------------------------------------------- */
+/*Contacts section*/
+.contact-section{
+	padding: 10px 10px;
+	margin: 40px 40px 20px 40px; /*top right bottom left*/
+	background-color: rgba(255, 127, 80, 0.103);
+}
+.contact-section h2{
+	font-size: 2em;
+}
+.contact-section .group{
+	display: flex;
+	gap: 40px;
+}
+.contact-section .group .text{
+	flex:3;
+}
+.contact-section .group form{
+	flex:2;
+	/* display: flex;
+	flex-direction: column;
+	align-items: start; */
+}
+.contact-section .group form input, .contact-section .group form textarea{
+	font-size: 1em;
+	font-family: 'Times New Roman', Times, serif;
+	color: black;
+	background-color: white;
+	padding: 5px;
+	outline: none;
+	border: 1px solid var(--link_color);
+	border-radius: 10px;
+}
+.contact-section .group button{
+	font-size: 0.9em;
+	padding: 8px;
+	border: 1px transparent;
+	border-radius: 10px;	
+	color: white;
+	background-color: var(--link_color);	
+	/* outline: none; */
+	cursor: pointer;
+}
+.contact-section .group button:hover{
+	filter: brightness(0.7);
+}
+#go-up a{
+	color: black;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+#go-top a i{
+	font-size: 20px; /*font awesome icon size*/
+}
+#go-top a span{
+	margin-left: 8px;
+}
+footer{
+	font-family: 'Courier New', Courier, monospace;
+	color: grey;
+	background-color: black;
+	text-align: center;
+	/* justify-content: space-between; */
+	margin-bottom: 10px;
+}
