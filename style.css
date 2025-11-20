@@ -60,15 +60,18 @@ nav .left a:hover{
 nav .right a span{	
 	margin-left: 8px;
 }
+section{
+	padding: 40px 40px;
+	margin: 30px 30px;
+	border-radius: 10px;
+}
+/* ------------------------------------------------------- */
 /*hero section*/
 .hero-section{
-	/* border-radius: 10%; */
 	background-color: var(--hero_background);
 	display: flex;
 	/*justify-content: space-between; -- not needed as flex used in children */  /*horizontally*/
 	align-items: center; /*vertically*/
-	padding: 10px 10px;
-	margin: 40px 40px;
 	gap: 40px;	 
 }
 .hero-section .text{
@@ -82,8 +85,7 @@ nav .right a span{
 	margin-top: 20px;
 	display: flex;
 	justify-content: center;
-	/* align-items: start; */
-	/* align-items: center; */
+	/* align-items: start; */	
 	text-align: center;
 }
 .hero-section .text .links a{
@@ -107,11 +109,9 @@ nav .right a span{
 	height: 200px;
 	border-radius: 50%;
 }
-
+/* ------------------------------------------------------- */
 /*skills section*/
-.skills-section{
-	padding: 10px 10px;
-	margin: 40px 40px;
+.skills-section{	
 	background-color: rgba(227, 221, 236, 0.692);
 }
 .skills-section h2{
@@ -150,15 +150,19 @@ nav .right a span{
 	font-weight: bold;
 	font-family: Courier;
 }
-/* -------------------------------------------------------  DarkGreen*/
+/* ------------------------------------------------------- */
+/* certifications section */
+.certifications-section{
+	background-color: rgba(130, 187, 201, 0.151);
+}
+/* ------------------------------------------------------- */
 /*projects section*/
-.projects-section{
-	padding: 10px 10px;
-	margin: 40px 40px;
-	background-color: rgba(150, 187, 151, 0.226);
+.projects-section{	
+	background-color: rgba(150, 187, 151, 0.215);
 }
 .projects-section h2{
 	font-size: 2em;
+	/* text-align: center; */
 }
 .projects-section b{
 	color: DarkGreen;
@@ -180,9 +184,7 @@ nav .right a span{
 /* ------------------------------------------------------- */
 /*Contacts section*/
 .contact-section{
-	padding: 10px 10px;
-	margin: 40px 40px 20px 40px; /*top right bottom left*/
-	background-color: rgba(255, 127, 80, 0.103);
+	background-color: rgba(218, 205, 171, 0.301);
 }
 .contact-section h2{
 	font-size: 2em;
