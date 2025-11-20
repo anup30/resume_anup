@@ -32,7 +32,8 @@ body{
 	font-family: Calibri, sans-serif;
 } */
 a{
-	text-decoration: none;	
+	text-decoration: none;
+	color: darkcyan;
 }
 nav{
 	display: flex;
@@ -109,7 +110,7 @@ section{
 	height: 200px;
 	border-radius: 50%;
 }
-/* ------------------------------------------------------- */
+
 /*skills section*/
 .skills-section{	
 	background-color: rgba(227, 221, 236, 0.692);
@@ -150,19 +151,23 @@ section{
 	font-weight: bold;
 	font-family: Courier;
 }
-/* ------------------------------------------------------- */
+
 /* certifications section */
 .certifications-section{
 	background-color: rgba(130, 187, 201, 0.151);
 }
-/* ------------------------------------------------------- */
+
+/* cp section */
+.cp-section{
+	background-color: rgba(118, 178, 230, 0.226);
+}
+
 /*projects section*/
 .projects-section{	
 	background-color: rgba(150, 187, 151, 0.215);
 }
 .projects-section h2{
 	font-size: 2em;
-	/* text-align: center; */
 }
 .projects-section b{
 	color: DarkGreen;
@@ -181,7 +186,7 @@ section{
 	position: relative;
 	left: 30px;
 }
-/* ------------------------------------------------------- */
+
 /*Contacts section*/
 .contact-section{
 	background-color: rgba(218, 205, 171, 0.301);
