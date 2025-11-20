@@ -103,8 +103,8 @@ nav .right a span{
 }
 
 .hero-section .headshot img{
-	width: 300px;
-	height: 300px;
+	width: 200px;
+	height: 200px;
 	border-radius: 50%;
 }
 
@@ -150,7 +150,7 @@ nav .right a span{
 	font-weight: bold;
 	font-family: Courier;
 }
-/* ------------------------------------------------------- */
+/* -------------------------------------------------------  DarkGreen*/
 /*projects section*/
 .projects-section{
 	padding: 10px 10px;
@@ -160,7 +160,20 @@ nav .right a span{
 .projects-section h2{
 	font-size: 2em;
 }
+.projects-section b{
+	color: DarkGreen;
+}
+.projects-section h3{
+	font-size: 1.2em;
+	text-decoration: underline;
+	margin-top: 10px;
+}
+
 .projects-section #flutter{	
+	position: relative;
+	left: 30px;
+}
+.projects-section #django{	
 	position: relative;
 	left: 30px;
 }
