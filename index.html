@@ -21,9 +21,8 @@
 		referrerpolicy="no-referrer" 
 	/>
 	<link rel="stylesheet" href="style.css">
-
 </head>
-<body id="body">	
+<body id="body">
 	<header>
 		<nav>
 			<!-- write div.left+tab for shortcut -->		
@@ -46,6 +45,7 @@
 				<p>Aspiring Software Engineer dedicated to writing efficient code, backed by a solid grasp of DSA and CS fundamentals. 
 					Proficient in the Python ecosystem (<b>Django</b>, <b>FastAPI</b>) and front-end technologies (<b>React</b>, <b>Flutter</b>). 
 					Looking for a challenging junior role where I can utilize my problem-solving abilities and rapid learning curve to deliver high-quality software.
+					<a href="resources/resume Anup Barua.pdf" download="resume_Anup Barua_full stack developer.pdf" class="download-button">Download Resume (pdf)</a>
 				</p>
 				<div class="links">
                     <a href="https://github.com/anup30" target="_blank">
@@ -63,7 +63,7 @@
                 </div>
 			</div>
 			<div class="headshot">
-				<img src="images/anup_pic.png" alt="anup's pictue">
+				<img src="resources/anup_pic.png" alt="anup's pictue">
 			</div>			
 		</section>
 		<!-- skills section -->
@@ -80,36 +80,68 @@
 			</div>
 			<div class="cells">
 				<div class="cell">
-					<img src="images/html-logo.webp" alt="html logo">
+					<img src="resources/html-logo.webp" alt="html logo">
 					<span>HTML</span>
 				</div>
 				<div class="cell">
-					<img src="images/css-logo.webp" alt="css logo">
+					<img src="resources/css-logo.webp" alt="css logo">
 					<span>CSS</span>
 				</div>
 				<div class="cell">
-					<img src="images/javascript-logo.webp" alt="javascript logo">
+					<img src="resources/javascript-logo.webp" alt="javascript logo">
 					<span>JavaScript</span>
 				</div>
 				<div class="cell">
-					<img src="images/react-logo.webp" alt="react logo">
+					<img src="resources/bootstrap.svg" alt="bootstrap logo">
+					<span>Bootstrap</span>
+				</div>
+				<div class="cell">
+					<img src="resources/tailwind.svg" alt="tailwind logo">
+					<span>Tailwind</span>
+				</div>
+				<div class="cell">
+					<img src="resources/react-logo.webp" alt="react logo">
 					<span>React</span>
 				</div>
 				<div class="cell">
-					<img src="images/flutter-icon.svg" alt="Flutter logo">
+					<img src="resources/dart.svg" alt="dart logo">
+					<span>Dart</span>
+				</div>
+				<div class="cell">
+					<img src="resources/flutter-icon.svg" alt="Flutter logo">
 					<span>Flutter</span>
 				</div>
 				<div class="cell">
-					<img src="images/python-logo.svg" alt="Python logo">
+					<img src="resources/python-logo.svg" alt="Python logo">
 					<span>Python</span>
 				</div>
 				<div class="cell">
-					<img src="images/django-logo.svg" alt="Django logo">
+					<img src="resources/django-logo.svg" alt="Django logo">
 					<span>Django</span>
 				</div>
 				<div class="cell">
-					<img src="images/cpp-logo.svg" alt="C++ logo">
+					<img src="resources/fastapi.svg" alt="fastapi logo">
+					<span>FastApi</span>
+				</div>
+				<div class="cell">
+					<img src="resources/c.svg" alt="C logo">
+					<span>C</span>
+				</div>
+				<div class="cell">
+					<img src="resources/cpp-logo.svg" alt="C++ logo">
 					<span>C++</span>
+				</div>
+				<div class="cell">
+					<img src="resources/sqlite.svg" alt="sqlite logo">
+					<span>Sqlite</span>
+				</div>
+				<div class="cell">
+					<img src="resources/pgsql.svg" alt="postgresql logo">
+					<span>PostgreSql</span>
+				</div>
+				<div class="cell">
+					<img src="resources/mysql.svg" alt="mysql logo">
+					<span>MySql</span>
 				</div>
 			</div>
 		</section>
@@ -181,7 +213,7 @@
 				<ul>
 					<li>play live online radio stations</li>					
 					<li>code in github: <a href="https://github.com/anup30/just_radio" target="_blank">link</a></li>
-					<li>live web version: <a href="https://anup30.github.io/just_radio/">link</a></li>
+					<li>live web version: <a href="https://anup30.github.io/just_radio/" target="_blank">link</a></li>
 				</ul>
 				<b>BMI Calculator App </b> 
 				<ul>
@@ -213,24 +245,46 @@
 			</div>
 		</section>
 		<!-- ------------------------------------------------ -->
-		<!-- contacts section -->
+		<!-- contacts section -->		
 		<section class="contact-section" id="contact-section">
 			<h2>Contact</h2>
-			<div>
-				<p>email: anupbarua30@gmail.com</p>
-				<p>phone: (BD) 01913378482</p>
+			<div class="group">
+				<div id="contact-info">
+					<p>email: anupbarua30@gmail.com</p>
+					<p>phone: (BD) 01913378482</p>
+				</div>
+				<div id="contact_form">
+					<form id="contactForm">
+						<label for="name">Name</label><br>
+						<input type="text" id="name" placeholder="Enter your name"><br>
+						<label for="email">Email</label><br>
+						<input type="email" id="email" placeholder="Enter your email"><br>
+						<label for="message">Message</label><br>
+						<textarea name="msg" id="message" placeholder="enter your message" rows="6" cols="30"></textarea><br>
+						<!-- google recaptcha widget -->
+						<div class="recaptcha-container">
+							<div class="g-recaptcha" data-sitekey="6Le_fSksAAAAAJGx9o8nsY5CZjqM_he2fOqplLRH"></div>
+						</div>
+						<button type="submit" id="submitBtn">send message</button>
+					</form>
+				</div>
 			</div>
 		</section>
 		<div id="go-up">
 			<a href="#body"><i class="fa-regular fa-circle-up"></i><span>go top</span></a>
 		</div>
-
 	</main>
 	<footer>
 		<sub>author: Anup Barua,</sub>
 		<sub>anupbarua30@gmail.com,</sub>
 		<sub>&copycopyright reserved 2025</sub>
-	</footer>
+	</footer>	
+	<!-- Google reCAPTCHA API -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<!-- EmailJS SDK - Using latest version for limitRate support -->
+	<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+	<!-- javascript -->
+	<script src="script.js"></script>
 </body>
 </html>
 

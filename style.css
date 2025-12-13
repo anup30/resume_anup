@@ -35,6 +35,9 @@ a{
 	text-decoration: none;
 	color: darkcyan;
 }
+.download-button:hover {
+    color: var(--link_hover);
+}
 nav{
 	display: flex;
 	justify-content: space-between;
@@ -195,18 +198,53 @@ section{
 	font-size: 2em;
 }
 .contact-section .group{
-	display: flex;
-	gap: 40px;
+  display: flex;
+  align-items: flex-start; /* align blocks at top */
+  gap: 24px;  /* spacing between left info and form area */
+}
+.contact-section #contact-info{
+  flex: 0 0 240px; /* don't grow or shrink, base width 240px */
+  /* optional styling */
+  padding: 8px;
+}
+.contact-section #contact_form{
+  flex: 1 1 auto;       /* take remaining width */
+  display: flex;
+  justify-content: center; /* horizontally center the form */
+  align-items: flex-start; /* or center */
+  padding: 8px;
+}
+#contact_form form{
+  width: 100%;
+  max-width: 600px;      /* limits how wide the form grows; change if needed */
+  /* align-items: center; */
+  /* justify-content: center; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;  
+  /* you can add padding/margin if desired */
+}
+/* make inputs and textarea fill the form width */
+#contact_form form input, #contact_form form textarea{
+  width: 80%;
+  box-sizing: border-box; /* already set globally, but kept for clarity */
+}
+/* optional: center the submit button --- not woking */
+
+
+
+.contact-section #contact_form{
+	justify-content: center;
+	align-items: center;	
+}
+.contact-section #contact_form form{
+	display: block;
 }
 .contact-section .group .text{
 	flex:3;
 }
-.contact-section .group form{
-	flex:2;
-	/* display: flex;
-	flex-direction: column;
-	align-items: start; */
-}
+
+
 .contact-section .group form input, .contact-section .group form textarea{
 	font-size: 1em;
 	font-family: 'Times New Roman', Times, serif;
@@ -214,8 +252,13 @@ section{
 	background-color: white;
 	padding: 5px;
 	outline: none;
-	border: 1px solid var(--link_color);
+	border: 1px solid silver;
 	border-radius: 10px;
+}
+input:focus, textarea:focus {
+	border: 1px solid var(--link_color);  
+    box-shadow: 0 0 4px var(--link_color);
+    outline: none;  /* remove default outline */
 }
 .contact-section .group button{
 	font-size: 0.9em;
@@ -251,4 +294,25 @@ footer{
 	text-align: center;
 	/* justify-content: space-between; */
 	margin-bottom: 10px;
+}
+
+/* stack vertically on small screen */
+@media (max-width: 700px) {
+  .contact-section .group{
+    flex-direction: column;
+    gap: 12px;
+  }
+  .contact-section #contact-info{
+    flex: none;
+    width: 100%;
+  }
+  .contact-section #contact_form{
+    flex: none;
+    width: 100%;
+    justify-content: center;
+  }
+  #contact_form form{
+    max-width: none;
+    width: 100%;
+  }
 }
